@@ -1,0 +1,16 @@
+# name of the workflow, could be any
+name: First Workflow
+# defines event(s) which will trigger workflow execution
+on: workflow_dispatch
+jobs:
+  # name of the job, could be any
+  firstjob:
+  # type of runner that the job will run on (environment)
+    runs-on: windows-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello world!"
+
+      - name: Print goodbye
+        run: echo "Done - bye!"
+
